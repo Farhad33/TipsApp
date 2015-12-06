@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Pre-work - *Tips*
 
 **Tips** is a tip calculator application for iOS.
@@ -52,6 +51,4 @@ Describe any challenges encountered while building the app.
     See the License for the specific language governing permissions and
     limitations under the License.
 =======
-# TipsApp
-CodePath
 >>>>>>> 984dba663977f0094fd15bfe4404e4b49dc4027b
