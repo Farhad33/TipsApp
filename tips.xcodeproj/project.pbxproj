@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0662621C19227E000DBC82 /* SetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0662611C19227E000DBC82 /* SetingsViewController.swift */; };
 		1C35023C1C0EDAFC001D122F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35023B1C0EDAFC001D122F /* AppDelegate.swift */; };
 		1C35023E1C0EDAFC001D122F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35023D1C0EDAFC001D122F /* ViewController.swift */; };
 		1C3502411C0EDAFC001D122F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C35023F1C0EDAFC001D122F /* Main.storyboard */; };
 		1C3502431C0EDAFC001D122F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3502421C0EDAFC001D122F /* Assets.xcassets */; };
-		1C3502461C0EDAFC001D122F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3502441C0EDAFC001D122F /* LaunchScreen.storyboard */; };
 		1C3502511C0EDAFC001D122F /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3502501C0EDAFC001D122F /* tipsTests.swift */; };
 		1C35025C1C0EDAFC001D122F /* tipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35025B1C0EDAFC001D122F /* tipsUITests.swift */; };
-		1C35026A1C13AC1D001D122F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3502691C13AC1D001D122F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0662611C19227E000DBC82 /* SetingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetingsViewController.swift; sourceTree = "<group>"; };
 		1C3502381C0EDAFC001D122F /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C35023B1C0EDAFC001D122F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C35023D1C0EDAFC001D122F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C3502401C0EDAFC001D122F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C3502421C0EDAFC001D122F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1C3502451C0EDAFC001D122F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C3502471C0EDAFC001D122F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C35024C1C0EDAFC001D122F /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3502501C0EDAFC001D122F /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
@@ -48,7 +47,6 @@
 		1C3502571C0EDAFC001D122F /* tipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C35025B1C0EDAFC001D122F /* tipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsUITests.swift; sourceTree = "<group>"; };
 		1C35025D1C0EDAFC001D122F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C3502691C13AC1D001D122F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +100,8 @@
 				1C35023B1C0EDAFC001D122F /* AppDelegate.swift */,
 				1C35023D1C0EDAFC001D122F /* ViewController.swift */,
 				1C35023F1C0EDAFC001D122F /* Main.storyboard */,
-				1C3502691C13AC1D001D122F /* SettingsViewController.swift */,
+				1C0662611C19227E000DBC82 /* SetingsViewController.swift */,
 				1C3502421C0EDAFC001D122F /* Assets.xcassets */,
-				1C3502441C0EDAFC001D122F /* LaunchScreen.storyboard */,
 				1C3502471C0EDAFC001D122F /* Info.plist */,
 			);
 			path = tips;
@@ -233,7 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3502461C0EDAFC001D122F /* LaunchScreen.storyboard in Resources */,
 				1C3502431C0EDAFC001D122F /* Assets.xcassets in Resources */,
 				1C3502411C0EDAFC001D122F /* Main.storyboard in Resources */,
 			);
@@ -262,7 +258,7 @@
 			files = (
 				1C35023E1C0EDAFC001D122F /* ViewController.swift in Sources */,
 				1C35023C1C0EDAFC001D122F /* AppDelegate.swift in Sources */,
-				1C35026A1C13AC1D001D122F /* SettingsViewController.swift in Sources */,
+				1C0662621C19227E000DBC82 /* SetingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +300,6 @@
 				1C3502401C0EDAFC001D122F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1C3502441C0EDAFC001D122F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C3502451C0EDAFC001D122F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -497,6 +485,7 @@
 				1C3502621C0EDAFC001D122F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C3502631C0EDAFC001D122F /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +494,7 @@
 				1C3502651C0EDAFC001D122F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C3502661C0EDAFC001D122F /* Build configuration list for PBXNativeTarget "tipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +503,7 @@
 				1C3502681C0EDAFC001D122F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
