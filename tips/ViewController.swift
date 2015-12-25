@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController
+{
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var tipAmountLabel: UILabel!
@@ -28,18 +29,29 @@ class ViewController: UIViewController {
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
     
-//    @IBAction func moveDown(){
-//        tipLabel.center.y += 500
-//        tipAmountLabel.center.y += 500
-//        blackLine.center.y += 500
-//        totalLabel.center.y += 500
-//        tipPercentageLabel.center.y += 500
-//        slider.center.y += 500
-//        Total.center.y += 500
-//        tipPercentage.center.y += 500
-//    }
     
-    func time(){
+    func animateTips()
+    {
+        if (billField.text == "0") {
+            UIView.animateWithDuration(1.5, delay: 0.1, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
+                self.secondView.transform = CGAffineTransformMakeTranslation(0, 500);
+                self.firstView.transform = CGAffineTransformMakeTranslation(0, 100);
+                }, completion: nil)
+            
+        }
+
+        
+        if (billField.text != "0") {
+            UIView.animateWithDuration(1.5, delay: 0.1, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
+                self.secondView.transform = CGAffineTransformMakeTranslation(0, 0);
+                self.firstView.transform = CGAffineTransformMakeTranslation(0, 0);
+                }, completion: nil)    }
+    }
+
+    
+    
+    func time()
+    {
         let savedTime = NSUserDefaults.standardUserDefaults().objectForKey("savedTime") as? NSDate
         
         if (savedTime != nil && NSDate().timeIntervalSinceDate(savedTime!) < 600){
@@ -54,9 +66,9 @@ class ViewController: UIViewController {
     
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        print("view did load")
         billField.becomeFirstResponder()
         billField.text = userDefaults.stringForKey("savedAmount")
     }
@@ -64,24 +76,24 @@ class ViewController: UIViewController {
 
     
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool)
+    {
         super.viewWillAppear(animated)
-        print("view will appear")
-        
         slider.value = userDefaults.floatForKey("minimum")
         onEditingChanged(nil)
     }
     
     
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
     }
 
     
     
-    @IBAction func onEditingChanged(sender: AnyObject?) {
-
+    @IBAction func onEditingChanged(sender: AnyObject?)
+    {
         let currencyFormatter = NSNumberFormatter()
         currencyFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
         currencyFormatter.locale = NSLocale.currentLocale()
@@ -92,10 +104,8 @@ class ViewController: UIViewController {
         let billAmount = NSString(string: billField.text!).doubleValue
         userDefaults.setDouble(billAmount, forKey: "savedAmount")
        
-        let temp = Int(slider.value)
-        print(temp)
-        tipPercentageLabel.text = "\(temp)%"
-        let tipPercentage = Double(temp) / 100
+        tipPercentageLabel.text = String(Int(slider.value))
+        let tipPercentage = Double(slider.value) / 100
         
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
@@ -108,10 +118,12 @@ class ViewController: UIViewController {
         eachPersonAmount.text = currencyFormatter.stringFromNumber(eachPerson)
         
         time()
+        animateTips()
     }
     
 
-    @IBAction func onTap(sender: AnyObject) {
+    @IBAction func onTap(sender: AnyObject)
+    {
         view.endEditing(true)
     }
     
