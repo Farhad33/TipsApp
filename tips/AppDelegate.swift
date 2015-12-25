@@ -18,10 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
+//        let currentTime = NSDate()
         
         userDefaults.floatForKey("minimum")
         userDefaults.floatForKey("maximum")
         userDefaults.doubleForKey("current")
+        userDefaults.objectForKey("savedTime")
+        userDefaults.doubleForKey("savedAmount")
         
         let firstEverLoad = userDefaults.boolForKey("first_Ever_Load")
         
@@ -30,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             userDefaults.setFloat(22, forKey: "maximum")
             userDefaults.setDouble(18, forKey: "current")
             userDefaults.setBool(true, forKey: "first_Ever_Load")
+            userDefaults.setObject(NSData(), forKey: "savedTime")
             userDefaults.synchronize()
         }
         

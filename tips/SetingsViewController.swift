@@ -51,7 +51,7 @@ class SetingsViewController: UIViewController {
 
     
     @IBAction func BackDismiss(sender: UIButton) {
-        view.endEditing(true)
+        view.endEditing(false)
         dismissViewControllerAnimated(true, completion: {})
     }
 
